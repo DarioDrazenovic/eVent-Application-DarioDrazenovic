@@ -1,0 +1,367 @@
+﻿html, body {
+    height: 100%;
+}
+
+.jumbotron.vertical-center {
+    margin-bottom: 0;
+}
+
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+/*----------------REGISTER.ASPX i LOGIN.ASPX---------------------*/
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+/* Add some padding inside the card container */
+.container {
+    padding: 18px 200px;
+}
+
+#RegistrirajSe {
+    text-decoration: underline;
+    font-size: 30px;
+    color: black;
+    padding-bottom: 20px;
+}
+
+#LogirajSe {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+
+    #LogirajSe:hover {
+        text-decoration: underline;
+        font-size: 30px;
+        color: black;
+    }
+
+#FName {
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#LName {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#EmailCss {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#PassCss {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#RepeatPass {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+#btnCss {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+/*-----------------Register.aspx-------------------------*/
+
+/*-----------------KorisnickePostavke.ASPX-------------------*/
+
+#korPostNaslovi {
+    font-size: 30px;
+    color: black;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#lblOsobniPod {
+    text-decoration: underline;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+#MojiDogadaji {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    padding-right: 10px;
+}
+
+    #MojiDogadaji:hover {
+        text-decoration: underline;
+        font-size: 30px;
+        color: black;
+    }
+
+#Postavke {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+
+    #Postavke:hover {
+        text-decoration: underline;
+        font-size: 30px;
+        color: black;
+    }
+
+#StaraLozinkaCss {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#NovaLozinkaCss {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#PonoviteLozinkuCss {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#btnZaLozinkeCss {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+#lblPostavke {
+    text-decoration: underline;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+
+#OsobniPodaci {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    padding-right: 10px;
+}
+
+    #OsobniPodaci:hover {
+        text-decoration: underline;
+        font-size: 30px;
+        color: black;
+    }
+
+#kreirajDogadajREMOVE {
+    text-align: center;
+}
+
+#btnKreiraj {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+#lblMojiDogadaji2 {
+    text-decoration: underline;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+
+#OsobniPodaci {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    padding-right: 10px;
+}
+
+    #OsobniPodaci:hover {
+        text-decoration: underline;
+        font-size: 30px;
+        color: black;
+    }
+
+#Postavke2 {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+
+    #Postavke2:hover {
+        text-decoration: underline;
+        font-size: 30px;
+        color: black;
+    }
+
+#lblJezikAplikacije {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#EmailKorPosCss {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+#btnDeleteUsr {
+    padding-top: 10px;
+}
+
+.auto-style2 {
+    padding-left: 240px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+/*-----------------KorisnickePostavke.ASPX-------------------*/
+/*Pocetna strana aspx*/
+navbar navbar-expand-sm navbar-light {
+    background-color: grey;
+}
+
+#navNaslov {
+    text-decoration: none;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+#navLogin {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#navRegister {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#navKontakt {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#navONama {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#navNaslovna {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#h1Naslov {
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 35px;
+}
+
+#inputDogadaj {
+    text-align: center;
+    padding-top: 20px;
+    font-size: x-large;
+}
+
+#btnSubmit {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#navKorPos {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.hardSize {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.hardSize:hover {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+/*--------------KORISNICKE POSTAVKE.ASPX--------------------*/
+
+/*-------------POCETNA STRANA.ASPX----------------------*/
+
+.h1Naslov {
+    text-align: center;
+}
+
+/*----------------POCETNA STRANA.ASPX----------------------*/
+
+/*----------PROFIL ORGANIZATORA.ASPX-------------------*/
+
+.btnCancelProfilOrg {
+    display: block;
+    border: none;
+    background-color: cornflowerblue;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+    .btnCancelProfilOrg:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+/*----------PROFIL ORGANIZATORA.ASPX-------------------*/
+
+/*----------------UREDIVANJE DOGADAJA.ASPX----------------------*/
+.urediNazivId {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 10px;
+}
+
+/*----------------UREDIVANJE DOGADAJA.ASPX----------------------*/

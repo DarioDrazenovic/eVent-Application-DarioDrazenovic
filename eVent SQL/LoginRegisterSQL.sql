@@ -1,0 +1,46 @@
+CREATE DATABASE eVentDatabase
+GO
+
+USE eVentDatabase
+GO
+
+CREATE TABLE QUser
+(
+	IDQUser INT PRIMARY KEY IDENTITY,
+	FirstName NVARCHAR(100),
+	LastName NVARCHAR(100),
+	Email NVARCHAR(100),
+	Password NVARCHAR(64)
+)
+GO
+
+CREATE PROCEDURE createQUser
+	@firstName NVARCHAR(100),
+	@lastName NVARCHAR(100),
+	@email NVARCHAR(100),
+	@password NVARCHAR(64)
+AS
+BEGIN
+	SET NOCOUNT ON
+	IF EXISTS (SELECT IDQUser FROM QUser WHERE Email = @email)
+		SELECT -1
+	ELSE
+	BEGIN
+		INSERT INTO QUser VALUES(@firstName, @lastName, @email, @password)
+		SELECT SCOPE_IDENTITY()
+	END
+END
+GO
+
+CREATE PROCEDURE checkQUser
+	@email NVARCHAR(100),
+	@password NVARCHAR(64)
+AS
+BEGIN
+	SET NOCOUNT ON
+	IF NOT EXISTS (SELECT IDQUser FROM QUser WHERE Email = @email and Password = @password)
+		SELECT -1
+	ELSE
+		SELECT 0
+END
+GO
